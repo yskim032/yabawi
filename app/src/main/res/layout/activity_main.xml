@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Main Content Area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"> <!-- Leave space for the AdView -->
+
+        <!-- Statistics Area -->
+        <TextView
+            android:id="@+id/gameStatsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Games: 0\nWins: 0\nLosses: 0\nWin Rate: 0%\nCurrent Balance: 1,000,000 Won"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Bet Input Area -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/betAmountEditText"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Bet Amount"
+                android:inputType="number"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/setBetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:layout_marginLeft="8dp" />
+        </LinearLayout>
+
+        <!-- Game Progress Area -->
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a dot!"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <Button
+                android:id="@+id/dot1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:backgroundTint="@android:color/darker_gray"
+                android:text="⚫"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:elevation="4dp" />
+
+            <Button
+                android:id="@+id/dot2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:backgroundTint="@android:color/darker_gray"
+                android:text="⚫"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:elevation="4dp" />
+
+            <Button
+                android:id="@+id/dot3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:backgroundTint="@android:color/darker_gray"
+                android:text="⚫"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:elevation="4dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset Game"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:elevation="4dp" />
+    </LinearLayout>
+
+    <!-- AdView at the bottom -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6853870994966036/8751292441" />
+</FrameLayout>
+

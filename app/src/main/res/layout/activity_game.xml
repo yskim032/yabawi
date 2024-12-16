@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="점 하나를 선택하세요!"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <Button
+            android:id="@+id/dot1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="⚫"
+            android:textSize="24sp"
+            android:layout_margin="8dp"
+            android:elevation="4dp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/dot2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="⚫"
+            android:textSize="24sp"
+            android:layout_margin="8dp"
+            android:elevation="4dp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/dot3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="⚫"
+            android:textSize="24sp"
+            android:layout_margin="8dp"
+            android:elevation="4dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/gameStatsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="게임 횟수: 0회\n이긴 횟수: 0회\n실패한 횟수: 0회\n승률: 0%\n현재 자금: 1,000,000원"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="돌아가기"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:elevation="4dp" />
+</LinearLayout>
+
+
+
