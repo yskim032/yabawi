@@ -109,6 +109,19 @@
             android:padding="12dp"
             android:textSize="16sp"
             android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record"
+            android:backgroundTint="#070707"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:elevation="4dp" />
+
     </LinearLayout>
 
     <!-- AdView at the bottom -->

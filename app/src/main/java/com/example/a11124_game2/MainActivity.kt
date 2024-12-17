@@ -33,6 +33,17 @@ class MainActivity : AppCompatActivity() {
         val resetButton = findViewById<Button>(R.id.resetButton)
         val betAmountEditText = findViewById<EditText>(R.id.betAmountEditText)
         val setBetButton = findViewById<Button>(R.id.setBetButton)
+        val record = findViewById<Button>(R.id.record)
+
+        //scoring record page
+        record.setOnClickListener{
+
+            setContentView(R.layout.activity_record)
+            val textView2 = findViewById<TextView>(R.id.textView2)
+            textView2.text = "now in new page"
+
+
+        }
 
         val dotButtons = listOf(
             findViewById<Button>(R.id.dot1),
